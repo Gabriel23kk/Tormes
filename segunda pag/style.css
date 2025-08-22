@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Oswald", sans-serif;
+}
+
+header {  
+    color: white;
+    text-align: center;
+    
+}
+.hero-banner {
+    background: url('./../assets/fundo.jpg') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    bottom: 1em;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+.navegation{
+    width: 100vw;
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    color: #002f4b;
+    background-color: #edf1fc;
+    
+}
+.navegation a{
+    text-decoration: none;
+}
+.navegation a:visited {
+    color: #002f4b;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8em;
+}
+.box{
+    display: flex;
+    gap: 80px;
+    
+}
+.box-text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.txt-2{
+    height: 600px;
+}
+.txt-1 h2, .txt-2 h2{
+    color: #1d4982;
+    font-size: 34px;
+    font-weight: 400;
+}
+.txt-1 p, .txt-2 p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.4em;
+}
+
+.txt-2 p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.4em;
+    margin-bottom: 4em;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #1d4982;
+    padding: 1em;
+    border-radius: 20px;
+    transition: transform 1s ease-in-out;
+    display: inline-block;
+    position: relative;
+    left: 1em;
+    
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.mirror-divul{
+    width: 500px;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+#footer {
+  background: linear-gradient(180deg, #002f4b, #005c97);
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #00c6ff;
+  display: flex;
+}
+
+.footer-col p, .footer-col a {
+  color: #ddd;
+  text-decoration: none;
+}
+.footer-col a{
+    font-size: 1.2rem;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+.links-sociais a{
+    font-size: 1.5rem;
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.9rem;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f8fb;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+
+
+/* --------------------> HEADER AND SECTION1 <---------------------------*/
+header {  
+    color: white;
+    text-align: center;
+}
+.hero-banner {
+    background: url('./assets/fundo.jpg') center/cover no-repeat;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    bottom: 1em;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #004974;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+.container-description{
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    background: url(./assets/blue.jpg);
+    background-size: cover;
+}
+.description{
+    width: 600px;
+    position: relative;
+    bottom: 5em;
+    animation: entrar2 1.3s ease-out forwards;
+}
+
+@keyframes entrar2 {
+    from{
+        opacity: 0;
+        transform: translateX(100em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.description h2{
+    color: #fff;
+}
+.description p{
+    color: #fff;
+}
+.description-img{
+    width: 400px;
+    box-shadow: -20px 20px #333;
+    position: relative;
+    bottom: 5em;
+    right: 3em;
+    animation: entrar 1.3s ease-out forwards;
+}
+@keyframes entrar {
+    from{
+        opacity: 0;
+        transform: translateY(-100em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+section {
+    padding: 60px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+   /*-----------------------------> ABOUT  <----------------------------- */
+
+#sobre{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: center
+}
+
+.container-logo{
+    border-right: 1px solid  #bebdbd;
+    padding-right: 4em;
+    animation: apper linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+.logo{
+    width: 430px;
+    border: 1.5px solid #bebdbd;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@keyframes apper {
+    from{
+        opacity: 0;
+        transform: translateX(-50em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.container-text {
+    max-width: 700px;
+    background-color: rgb(236, 236, 236);
+    padding: 0.5em;
+    padding-left: 2em;
+    border-radius: 10px;
+    border: 1.5px solid #bebdbd;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: txt linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+.container-text h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 2em;
+    color: #005b96;
+    margin-bottom: 20px;
+}
+
+.text-sobre{
+    font-size: 1.2em;
+    padding: 0px 1em 0px;
+}
+@keyframes txt {
+    from{
+        opacity: 0;
+        transform: translateX(50em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------> SERVICES <----------------------------*/
+
+
+.container-services{
+    display: flex;
+    gap: 8em;
+    justify-content: center;
+}
+.one{
+    
+    animation: services linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+    opacity: 0;
+}
+.two {
+    animation: services linear forwards;
+    animation-timeline: view();
+    animation-range: entry 10% entry 70%;
+    opacity: 0;
+}
+.three{
+    animation: services linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% entry 100%;
+    opacity: 0;
+}
+.four{
+    animation: services linear forwards;
+    animation-timeline: view();
+    animation-range: entry 30% entry 105%;
+    opacity: 0;
+}
+@keyframes services {
+    from {
+        transform: translateX(-20em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+#servicos h2{
+    text-align: center;
+    font-weight: 400;
+}
+
+.servico {
+  position: relative;
+  bottom: 0;
+  width: 200px;
+  height: 320px;
+  padding: 2em;
+  border-bottom: 5px solid #002f5e;
+  border-end-end-radius: 5px;
+  border-end-start-radius: 5px;
+  transition: bottom 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+}
+
+.servico:hover {
+  bottom: 1em;
+  background-color: #1f4780;
+  color: white;
+}
+
+
+.servico:hover, .servico:hover h3 {
+    color: white;
+}
+
+.servico h3 {
+    font-size: 30px;
+    margin-top: 0;
+    color: #007acc;
+}
+.servico-btn{
+    position: relative;
+    top: 2em;
+    padding: 0.5em;
+    font-weight: 550;
+    border-radius: 10px;
+    border: none;
+    background-color: #002e5f;
+    color: #fff;
+    cursor: pointer;
+}
+.servico:hover .servico-btn{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+.btn-contato:hover {
+    background-color: #005b96;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------> WPP ICON <-----------------------------*/
+
+.whatsapp-fixo{
+     position: fixed;      
+    bottom: 20px;           
+    right: 20px;            
+    z-index: 1000;      
+}
+.whatsapp-fixo img {
+    width: 60px;           
+    height: 60px;
+    border-radius: 50%;     
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+.whatsapp-fixo img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------> WORK <--------------------------------**/
+.container-work{
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+.mirror-work{
+    width: 400px;
+    height: 600px;    
+    border-radius: 10px;
+    animation: work linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+@keyframes work {
+    from{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    to{
+        
+        transform: scale(1);
+    }
+}
+.mirror-work:hover {
+    animation: mirror-animation 1s forwards;
+}
+
+@keyframes mirror-animation {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+h4{
+    font-size: 2em;
+    color: #005b96;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------> FOOTER <-----------------------------*/
+#footer {
+  background: linear-gradient(180deg, #002f4b, #005c97);
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #00c6ff;
+  display: flex;
+}
+
+.footer-col p, .footer-col a {
+  color: #ddd;
+  text-decoration: none;
+}
+.footer-col a{
+    font-size: 1.2rem;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+.links-sociais a{
+    font-size: 1.5rem;
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.9rem;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
